@@ -1,0 +1,99 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+.container{
+  display: flex;
+  height: calc(100vh);
+  width: calc(100vw);
+}
+.left{
+  width: 55%;
+  height: 100%;
+  background-image: url(https://colorlib.com/etc/lf/Login_v18/images/bg-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+  background-color:white;
+}
+.form-title{
+  font-size: 1.9em;
+  font-family: sans-serif;
+}
+.right-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+
+}
+.all-fields{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.all-fields input{
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-bottom: 10px;
+  padding: 0 26px;
+  font-size: 18px;
+  color: #555;
+  background-color: transparent;
+}
+#other-options{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#login-btn{
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #6675df;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#login-btn:hover{
+  transition: 0.5s;
+  background-color: rgb(68, 67, 67);
+}
+#p-text{
+  color: rgb(182, 182, 182);
+}
+#app-links{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.app{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.app-1{
+  background-image: url(https://s.yimg.com/fz/api/res/1.2/juUJc2SrROfDI6aUdgrQLQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTEyMDtxPTgwO3c9MTIw/https://s.yimg.com/zb/imgv1/c165dc31-f7f7-35c4-8df4-cdd842798724/t_500x300);
+  background-position: center;
+  background-size: cover;
+}
+.app-2{
+  background-image: url(https://s.yimg.com/fz/api/res/1.2/pKKGK2pqtDn50Mft1SVcIg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTEyMDtxPTgwO3c9MTIw/https://s.yimg.com/zb/imgv1/efb32ac1-ab75-3801-aee1-666cdf999dfa/t_500x300);
+  background-position: center;
+  background-size: cover;
+}

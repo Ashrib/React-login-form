@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import './styles.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Main() {
+  return (
+    <div className="container">
+      <div className="left"></div>
+      <div className="right">
+        <div className="right-content">
+          <p className="form-title">Login to continue</p>
+          <div className="all-fields">
+            <input type="email" placeholder="Email" id="email"/>
+            <input type="password" placeholder="Password" id="password"/>
+          </div>
+          <div id="other-options">
+            <div id="remember">
+              <input type="checkbox" htmlFor="remember" id="remember-check"/>
+              <label>Remember me</label>
+            </div>
+            <div><a href="javascript:void(0)">forgot password?</a></div>
+          </div>
+          <button id="login-btn">login</button>
+          <p id="p-text">or sign up using</p>
+          <div id="app-links">
+            <div className="app app-1"></div>
+            <div className="app app-2"></div>
+          </div>
+        </div>
+      </div>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    </div>
+  );
+}
+ReactDOM.render(<Main />, document.querySelector("#root"));
